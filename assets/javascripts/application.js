@@ -7,6 +7,7 @@ for (var i = 0; i < metaTags.length; i++) {
         break;
     }
 }
+
 if (typeof viewportTag == 'undefined') {
     viewportTag = document.createElement('META');
     viewportTag.name = 'viewport';
@@ -96,10 +97,15 @@ if (document.observe) {
 
         $(document).ready(function () {
 
+            // wrap tables div.table-container
             $("table").wrap("<div class='table-container' />");
+
+            // duplicate next-prev-links
             $(".next-prev-links").first().clone(true).insertAfter("#history");
             $(".next-prev-links").first().clone(true).insertBefore("#history");
-            $("#footer").before("<p id='page-top'><a href='#wrap'>&#x25B2</a></p>");
+
+            // insert scroll navigation
+            $("#footer").before("<p id='page-top'><a href='#wrap'>&#x25B2;</a></p>");
             $("#footer").before("<p id='page-bottom'><a href='#wrap'>&#x25BC;</a></p>");
 
             var mainMenu = $('#main-menu');
@@ -145,6 +151,7 @@ if (document.observe) {
             var topBtn = $('#page-top');
             var btmBtn = $('#page-bottom');
 
+            // default
             topBtn.hide();
             btmBtn.show();
 
@@ -166,14 +173,14 @@ if (document.observe) {
                     topBtn.fadeOut();
                 }
             });
-            //スクロールしてトップ
+            // goto Top of Page
             topBtn.click(function () {
                 $('body,html').animate({
                     scrollTop: 0
                 }, 500);
                 return false;
             });
-
+            // goto Bottom of page
             btmBtn.click(function () {
                 $('body,html').animate({
                     scrollTop: $("#footer").offset().top

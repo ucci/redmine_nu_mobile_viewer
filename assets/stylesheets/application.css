@@ -25,7 +25,7 @@
 #footer {
     -moz-border-radius-topleft:6px;
     -moz-border-radius-topright:6px;
-    background:url(../images/footer-background.png) repeat-x;
+    background:url(../images/bg_footer.png) repeat-x;
     border-top-left-radius:6px;
     border-top-right-radius:6px;
     border-top:none;
@@ -100,14 +100,14 @@
 #main-menu li a {
     -moz-border-radius-topleft:6px;
     -moz-border-radius-topright:6px;
-    background:#536a3f url(../images/menu-background.png) repeat-x;
+    background:#536a3f url(../images/bg_menu.png) repeat-x;
     border-top-left-radius:6px;
     border-top-right-radius:6px;
     padding:5px 14px;
 }
 
 #main-menu li a:hover {
-    background:#657c44 url(../images/menu-selected.png);
+    background:#657c44 url(../images/menu_selected.png);
 }
 
 #main-menu li,#content .tabs ul li {
@@ -146,7 +146,7 @@
 
 #sidebar {
     -moz-border-radius:6px;
-    background:#fdf7bb url(../images/yellow-box-background.png) repeat-x;
+    background:#fdf7bb url(../images/bg_yellow.png) repeat-x;
     border-radius:6px;
     border:1px solid #E4C742;
     margin-right:7px;
@@ -169,7 +169,7 @@
 #sidebar h3,div#issue-changesets h3 {
     -moz-border-radius-topleft:4px;
     -moz-border-radius-topright:4px;
-    background:#353d43 url(../images/footer-background.png) repeat-x;
+    background:#353d43 url(../images/bg_footer.png) repeat-x;
     border-bottom:none;
     border-top-left-radius:4px;
     border-top-right-radius:4px;
@@ -202,13 +202,13 @@
 }
 
 #wrapper {
-    background:url(../images/page-left.png) repeat-y left top;
+    background:url(../images/pager_left.png) repeat-y left top;
     padding-left:7px;
     margin:0 20px;
 }
 
 #wrapper2 {
-    background:#fff url(../images/page-right.png) repeat-y right top;
+    background:#fff url(../images/pager_right.png) repeat-y right top;
     padding-right:7px;
 }
 
@@ -244,7 +244,7 @@
 .icon-edit {
     -moz-border-radius-topleft:6px;
     -moz-border-radius-topright:6px;
-    background:#536a3f url(../images/menu-background.png) repeat-x;
+    background:#536a3f url(../images/bg_menu.png) repeat-x;
     border-radius:6px;
     color:#fff!important;
     display:block;
@@ -320,10 +320,7 @@
 
 blockquote {
     -moz-box-shadow:1px 2px 2px #b4b4b4;
-    background-color:rgba(243,243,243,0.5);
-    background-image:url(../images/quote.png);
-    background-position:right top;
-    background-repeat:no-repeat;
+    background: rgba(243, 243, 243, 0.5) url(../images/bg_quote.png) no-repeat right top;
     border:1px solid #b4b4b4;
     box-shadow:1px 2px 2px #b4b4b4;
     font-style:normal;
@@ -407,7 +404,7 @@ div.issue table img.gravatar,#watchers img.gravatar {
 div.wiki pre {
     -moz-border-radius:3px;
     -moz-box-shadow:1px 2px 2px #b4b4b4;
-    background:#F3F3F3 url(../images/code-background.png) left 3px;
+    background:#F3F3F3 url(../images/bg_code.png) left 3px;
     border-radius:3px;
     box-shadow:1px 2px 2px #b4b4b4;
     line-height:15px;
@@ -425,7 +422,7 @@ div.wiki table,div.wiki td,div.wiki th {
 div.wiki ul.toc {
     -moz-border-radius:6px;
     -moz-box-shadow:2px 3px 3px #b4b4b4;
-    background:#fdf7bb url(../images/yellow-box-background.png) repeat-x;
+    background:#fdf7bb url(../images/bg_yellow.png) repeat-x;
     border-radius:6px;
     border:1px solid #E4C742;
     box-shadow:2px 3px 3px #b4b4b4;
@@ -486,7 +483,7 @@ input.button-small,input[type="button"] {
 
 input.button-small,input[type="submit"],input[type="button"] {
     -moz-border-radius:6px;
-    background:#536a3f url(../images/menu-background.png) repeat-x;
+    background:#536a3f url(../images/bg_menu.png) repeat-x;
     border-radius:6px;
     color:#fff;
     border-color:#afc69c #435335 #435335 #afc69c;
@@ -498,7 +495,7 @@ input[type="submit"] {
 }
 
 input[type="submit"][disabled="disabled"],button[disabled="disabled"] {
-    background:#5e5e5e url(../images/menu-disabled.png);
+    background:#5e5e5e url(../images/menu_disabled.png);
     border-color:#bababa #4b4b4b #4b4b4b #bababa;
 }
 
@@ -534,7 +531,7 @@ pre,code {
 table.filecontent {
     -moz-border-radius:3px;
     background-color:#F3F3F3!important;
-    background-image:url(../images/code-background.png);
+    background-image:url(../images/bg_code.png);
     border-collapse:separate!important;
     border-radius:3px;
     border-spacing:0;
@@ -542,7 +539,7 @@ table.filecontent {
 }
 
 table.filecontent tbody tr.spacing td {
-    background:transparent url(../images/torn-background.png) repeat-x;
+    background:transparent url(../images/bg_torn.png) repeat-x;
 }
 
 table.filecontent td.line-code pre {
@@ -605,7 +602,7 @@ table.progress td {
 }
 
 table.progress td.closed {
-    background:#7ca858 url(../images/progress-background.png) repeat-x left bottom;
+    background:#7ca858 url(../images/bg_progress.png) repeat-x left bottom;
 }
 
 table.progress td.done {
